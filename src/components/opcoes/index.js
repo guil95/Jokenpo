@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native';
 import styled from 'styled-components'
 
 import Resultado from '../resultado'
-const ButtonsMargin = styled.View`
+const ButtonsWidth = styled.View`
   width: 33%;
 `
 
@@ -21,7 +21,6 @@ class Opcoes extends Component {
         let sorteio = Math.floor(Math.random() * 3)
     
         let resultado = ''
-    
         switch(escolha){
           case 'pedra':
             resultado = opcoesJokenPo[sorteio] == 'tesoura' && opcoesJokenPo[sorteio] != 'pedra' ? 'Você venceu' : 'Computador Venceu'
@@ -45,26 +44,27 @@ class Opcoes extends Component {
     return (
       <View>
           <View style={{flexDirection:'row', justifyContent:'space-between'}}>
-            <ButtonsMargin>
+            <ButtonsWidth>
             <Button 
                 title="pedra"
                 onPress = {()=>{this.jokenpo("pedra")}}
                 />
-            </ButtonsMargin>
-            <ButtonsMargin>
+            </ButtonsWidth>
+            <ButtonsWidth>
             <Button 
                 title="papel"
                 onPress = {()=>{this.jokenpo("papel")}}
                 color="#841584"
             />
-            </ButtonsMargin>
-            <ButtonsMargin>
+            </ButtonsWidth>
+            <ButtonsWidth>
             <Button
                 title="tesoura"
                 onPress = {()=>{this.jokenpo("tesoura")}}
                 color="#4db6ac"
             />
-            </ButtonsMargin>
+            </ButtonsWidth>
+           
         </View>
         <Resultado
          escolhaComputador={this.state.escolhaComputador} 
