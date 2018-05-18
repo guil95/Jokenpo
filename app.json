@@ -1,5 +1,21 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "26.0.0",
+    "name": "Jokenpo",
+    "description": "Aplicativo desenvolvido para estudos. Jogando o bom e velho Jokenpo",
+    "version": "1.0.0",
+    "slug": "",
+    "icon": "./assets/icon/jokenpo.png",
+    "splash": {
+      "image": "./assets/icon/jokenpo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "ios": {
+      "bundleIdentifier": "com.hive.jokenpo"
+    },
+    "android": {
+      "package": "com.hive.jokenpo"
+    }
   }
 }

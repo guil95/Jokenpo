@@ -66,6 +66,7 @@ class Opcoes extends Component {
             </ButtonsWidth>
            
         </View>
+ 
         <Resultado
          escolhaComputador={this.state.escolhaComputador} 
          escolhaUsuario={this.state.escolhaUsuario} 

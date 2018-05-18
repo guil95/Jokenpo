@@ -8,6 +8,9 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    image: {
+      width: "100%"
     }
   });
 
@@ -15,7 +18,7 @@ class Topo extends Component {
   render() {
     return (
       <View >
-        <Image source={require('../../../assets/img/jokenpo.png')} />
+        <Image style={styles.image} source={require('../../../assets/img/jokenpo.png')} />
       </View>
     );
   }

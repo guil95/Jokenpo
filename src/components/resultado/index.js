@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text,  Image, StyleSheet} from 'react-native';
+import { View, Text,  Image, StyleSheet, Dimensions} from 'react-native';
 import Icone from './icone'
+const { height, width } = Dimensions.get('window')
+
 const styles = StyleSheet.create({
     container: {
       backgroundColor: '#fff',
