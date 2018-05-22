@@ -6,11 +6,6 @@
     "version": "1.0.0",
     "slug": "",
     "icon": "./assets/icon/jokenpo.png",
-    "splash": {
-      "image": "./assets/icon/jokenpo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#FFFFFF"
-    },
     "ios": {
       "bundleIdentifier": "com.hive.jokenpo"
     },
